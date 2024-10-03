@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+</head>
+<body>
+<center>
+<div class="form-container">
+        
+    <form action="Login.html" method="post">    
+        <span>username</span>
+        <input type="text" name="username" placeholder="Enter your name" required minlength="3" maxlength="50">
+        <br><br>
+        <span>Email</span>
+        <input type="email" name="email" placeholder="Enter your email" required><br><br>
+        <span>password</span>
+        <input type="password" name="password" placeholder="Enter your password" required minlength="6" maxlength="20"><br><br>
+        <span>Age</span>
+        <input type="number" name="age" placeholder="Enter your age" min="18" max="60" required><br><br>
+        <span>Phone</span>
+        <input type="tel" name="phone" placeholder="Enter your phone number" required minlength="10" maxlength="15"><br><br>
+        <span>Date</span>
+        <input type="date" name="dob" required><br><br>
+        <span>Resume</span>
+        <input type="file" name="resume" required><br><br>
+        <span>Gender</span>
+        <input type="radio" name="gender" value="male" required> Male
+        <input type="radio" name="gender" value="female" required> female<br><br>
+        <span>Interests</span>
+        <input type="checkbox" name="interests" value="sports"> Sports 
+        <input type="checkbox" name="interests" value="music"> Music 
+        <input type="checkbox" name="interests" value="travel"> Travel <br><br>
+        <span>countries</span>
+        <input list="countries" name="country" placeholder="Select your country" required> <br><br>
+        <datalist id="countries">
+            <option value="USA"></option>
+            <option value="India" selected></option>
+            <option value="UK"></option>
+            <option value="Australia"></option>
+        </datalist>
+        <input type="checkbox" name="terms" required> I agree to the terms and conditions <br><br>
+        <input type="submit" class="submit-btn" value="Register">
+    </form>
+</div>
+</center>
+</body>
+</html>
